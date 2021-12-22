@@ -42,7 +42,7 @@ function compute(x,y)
 
 function blinked(ratio)
 {
-    if(ratio>=9.2)
+    if(ratio>=9.5)
         return 1;
     else
         return 0;
