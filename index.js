@@ -87,11 +87,14 @@ async function renderPrediction() {
                     active+=1;
                 }
                 var audio=new Audio("mixkit-facility-alarm-908.wav")
-                document.getElementById("h1").innerHTML=lefteye;
+                status="Active";
+                // document.getElementById("h1").innerHTML=lefteye;
                 if(sleep>=8)
                 {
+                    status="SLEEPY !!!";
                     audio.play();
                 }
+                document.getElementById("h1").innerHTML="STATUS : "+status;
         });
     }
 
